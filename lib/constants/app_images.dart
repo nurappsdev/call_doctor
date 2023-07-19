@@ -3,5 +3,5 @@
 class AppImages {
   AppImages._();
 
-  static String get celebrity => 'assets/images/celebrity.png';
+  static String get doctor => 'assets/images/celebrity.png';
 }

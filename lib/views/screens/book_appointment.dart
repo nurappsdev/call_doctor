@@ -20,24 +20,16 @@ class BookAppointmentScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 stackWidget(),
-                SizedBox(
-                  height: 16.h,
-                ),
+                SizedBox(height: 16.h),
                 cricketerButton(),
-                SizedBox(
-                  height: 16.h,
-                ),
+                SizedBox(height: 16.h),
                 Text(
                   "Dr. Shakib Al Hasan",
                   style:
                       AppTextStyles.medium20.copyWith(color: AppColors.black1),
                 ),
-                SizedBox(
-                  height: 24.h,
-                ),
-                SizedBox(
-                  height: 16.h,
-                ),
+                SizedBox(height: 24.h),
+                SizedBox(height: 16.h),
                 Container(
                   width: AppSize.width,
                   height: 145.h,
@@ -51,9 +43,7 @@ class BookAppointmentScreen extends StatelessWidget {
                         style: AppTextStyles.semiBold20
                             .copyWith(color: AppColors.black1),
                       ),
-                      SizedBox(
-                        height: 16.h,
-                      ),
+                      SizedBox(height: 16.h),
                       Text(
                         textAlign: TextAlign.start,
                         "Chris Kattan - Actor/Comedian. From Saturday Night Live , Night at the Roxbury , Corky Romano, and the Middle!",
@@ -63,9 +53,7 @@ class BookAppointmentScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 40.h,
-                ),
+                SizedBox(height: 40.h),
                 Container(
                   width: AppSize.width,
                   height: 122.h,
@@ -82,9 +70,7 @@ class BookAppointmentScreen extends StatelessWidget {
                         style: AppTextStyles.semiBold20
                             .copyWith(color: AppColors.black1),
                       ),
-                      SizedBox(
-                        height: 16.h,
-                      ),
+                      SizedBox(height: 16.h),
                       HorizontalListViewWidget(
                         itemCount: 7,
                         itemBuilder: (itemBuilder, index) {
@@ -94,17 +80,11 @@ class BookAppointmentScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 18.h,
-                ),
+                SizedBox(height: 18.h),
                 bookRequestWidget(),
-                SizedBox(
-                  height: 24.h,
-                ),
+                SizedBox(height: 24.h),
                 timeEST(),
-                SizedBox(
-                  height: 123.h,
-                ),
+                SizedBox(height: 123.h),
               ],
             ),
           ),
@@ -158,7 +138,7 @@ Widget stackWidget() {
           //   color: AppColors.blue,
           // ),
           CustomImages.normal(
-              source: AppImages.celebrity, height: 268.h, width: AppSize.width),
+              source: AppImages.doctor, height: 268.h, width: AppSize.width),
         ],
       ),
       Positioned(
