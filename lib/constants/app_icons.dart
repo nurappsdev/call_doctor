@@ -39,4 +39,6 @@ class AppIcons {
   static String get socialMedia => 'assets/icons/social_media.svg';
   static String get termPolicy => 'assets/icons/term_policy.svg';
   static String get twitter => 'assets/icons/twitter.png';
+  static String get visa => 'assets/icons/visa.png';
+  static String get visa1 => 'assets/icons/visa1.png';
 }
