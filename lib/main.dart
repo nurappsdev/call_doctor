@@ -7,6 +7,7 @@ import 'package:doctor/views/screens/pending/pendign_screen.dart';
 import 'package:doctor/views/screens/registration/registration_screen.dart';
 import 'package:doctor/views/screens/sAdd_card/sadd_card_screen.dart';
 import 'package:doctor/views/screens/sing_in/sing_in_screen.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
   runApp(const Doctor());
@@ -20,21 +21,21 @@ class Doctor extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (context, widget) {
-        return MaterialApp(
+        return GetMaterialApp(
           title: 'Doctor',
           debugShowCheckedModeBanner: false,
           navigatorKey: AppKeys.navigation,
           theme: ThemeData(),
           home: widget,
-          initialRoute: SingInScreen.routeName,
-          routes: {
-            SingInScreen.routeName: (context) => SingInScreen(),
-            "/homepage": (context) => HomeScreen(),
-            "/regScreen": (context) => RegistrationScreen(),
-          },
+          // initialRoute: SingInScreen.routeName,
+          // routes: {
+          //   SingInScreen.routeName: (context) => SingInScreen(),
+          //   "/homepage": (context) => HomeScreen(),
+          //   "/regScreen": (context) => RegistrationScreen(),
+          // },
         );
       },
-      // child: BookAppointmentScreen(),
+      child: BookAppointmentScreen(),
     );
   }
 }

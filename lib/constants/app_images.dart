@@ -1,4 +1,4 @@
-// import 'package:doctor/doctor.dart';
+import 'package:doctor/doctor.dart';
 
 class AppImages {
   AppImages._();

@@ -12,6 +12,7 @@ import 'package:get/get.dart';
 // import 'package:star_wish_bd/views/widgets/horizontal_list_view_widget.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const routeName = "";
   HomeScreen({Key? key}) : super(key: key);
 
   // final HomeScreenController controller =
