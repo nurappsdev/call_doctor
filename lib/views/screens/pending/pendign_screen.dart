@@ -1,7 +1,7 @@
 import 'package:doctor/views/screens/booking/booking_screen.dart';
 
 import 'package:doctor/views/widgets/custom_buttons.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 import 'package:doctor/doctor.dart';
 import 'package:doctor/views/widgets/custom_images.dart';
@@ -70,9 +70,9 @@ class PendignScreen extends StatelessWidget {
                 color: AppColors.orange,
                 name: 'Submit',
                 onPressed: () {
-                  Get.to(
-                    () => BookingScreen(),
-                  );
+                  // Get.to(
+                  //   () => BookingScreen(),
+                  // );
                 },
               ),
             ],

@@ -1,7 +1,7 @@
 import 'package:doctor/doctor.dart';
 import 'package:doctor/views/widgets/custom_images.dart';
 
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 import 'components/canceled_screen.dart';
 import 'components/completed_screen.dart';

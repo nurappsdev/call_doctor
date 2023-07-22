@@ -4,7 +4,7 @@ import 'package:doctor/views/widgets/custom_buttons.dart';
 import 'package:doctor/views/widgets/custom_images.dart';
 import 'package:doctor/views/widgets/horizontal_list_view_widget.dart';
 import 'package:flutter/foundation.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class BookAppointmentScreen extends StatelessWidget {
   BookAppointmentScreen({Key? key}) : super(key: key);
@@ -69,7 +69,7 @@ class BookAppointmentScreen extends StatelessWidget {
               icon: AppIcons.back,
               color: AppColors.white,
               onPressed: () {
-                Get.back();
+                // Get.back();
               }),
           const Spacer(),
           CustomButtons.svgIcon(
@@ -305,7 +305,7 @@ class BookAppointmentScreen extends StatelessWidget {
               //  padding: EdgeInsets.symmetric(horizontal: 16.w),
               name: 'Book Request',
               onPressed: () {
-                Get.to((context) => RegistrationScreen());
+                // Get.to((context) => RegistrationScreen());
               }),
         ],
       ),

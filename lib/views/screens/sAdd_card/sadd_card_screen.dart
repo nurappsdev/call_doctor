@@ -1,5 +1,5 @@
 import 'package:doctor/views/widgets/custom_buttons.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 import 'package:doctor/doctor.dart';
 import 'package:doctor/views/widgets/custom_images.dart';

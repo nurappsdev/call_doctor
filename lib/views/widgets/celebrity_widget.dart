@@ -2,7 +2,7 @@ import 'package:doctor/doctor.dart';
 import 'package:doctor/views/screens/book_appointment.dart';
 import 'package:doctor/views/widgets/custom_buttons.dart';
 import 'package:doctor/views/widgets/custom_images.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 enum CelebrityWidgetType {
   static,
@@ -20,7 +20,7 @@ class CelebrityWidget extends StatelessWidget {
     if (type == CelebrityWidgetType.static) {
       return CustomButtons.widget(
         onPressed: () {
-          Get.to(() => BookAppointmentScreen());
+          // Get.to(() => BookAppointmentScreen());
         },
         child: Container(
           width: 120.w,
@@ -95,7 +95,7 @@ class CelebrityWidget extends StatelessWidget {
       return Expanded(
         child: CustomButtons.widget(
           onPressed: () {
-            Get.to(() => BookAppointmentScreen());
+            // Get.to(() => BookAppointmentScreen());
           },
           child: Container(
             clipBehavior: Clip.hardEdge,
@@ -108,7 +108,7 @@ class CelebrityWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CustomImages.normal(
-                  source: AppImages.celebrity,
+                  source: AppImages.doctor,
                   height: 90.h,
                   width: AppSize.width,
                   fit: BoxFit.cover,
@@ -165,7 +165,7 @@ class CelebrityWidget extends StatelessWidget {
     }
     return CustomButtons.widget(
       onPressed: () {
-        Get.to(() => BookAppointmentScreen());
+        // Get.to(() => BookAppointmentScreen());
       },
       child: Container(
         clipBehavior: Clip.hardEdge,
@@ -178,7 +178,7 @@ class CelebrityWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomImages.normal(
-              source: AppImages.celebrity,
+              source: AppImages.doctor,
               height: 90.h,
               width: AppSize.width,
               fit: BoxFit.cover,

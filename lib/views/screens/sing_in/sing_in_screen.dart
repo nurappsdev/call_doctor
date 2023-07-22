@@ -4,7 +4,7 @@ import 'package:doctor/views/screens/registration/registration_screen.dart';
 import 'package:doctor/views/widgets/custom_buttons.dart';
 import 'package:doctor/views/widgets/custom_images.dart';
 
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class SingInScreen extends StatelessWidget {
   static const String routeName = "/singin";

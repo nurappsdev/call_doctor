@@ -2,7 +2,7 @@ import 'package:doctor/doctor.dart';
 import 'package:doctor/views/widgets/custom_buttons.dart';
 import 'package:doctor/views/widgets/custom_images.dart';
 
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class RegistrationScreen extends StatelessWidget {
   static const String routeName = "registraton";

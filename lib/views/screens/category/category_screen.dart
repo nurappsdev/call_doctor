@@ -4,6 +4,7 @@ import 'package:doctor/views/widgets/title_bar_widget.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class CategoryScreen extends StatelessWidget {
+  static const String routeName = "/category";
   CategoryScreen({Key? key}) : super(key: key);
 
   // final CategoryScreenController controller =
@@ -25,7 +26,7 @@ class CategoryScreen extends StatelessWidget {
                 Expanded(
                   child: InkWell(
                     onTap: () {
-                      // Get.to(() => RecommendedForYouScreen());
+                      Navigator.pushNamed(context, "/recommended");
                     },
                     child: MasonryGridView.count(
                       shrinkWrap: true,

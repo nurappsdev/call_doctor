@@ -3,7 +3,7 @@ import 'package:doctor/views/widgets/custom_buttons.dart';
 import 'package:doctor/views/widgets/title_bar_widget.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:doctor/doctor.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class RecentViewedScreen extends StatelessWidget {
   RecentViewedScreen({Key? key}) : super(key: key);

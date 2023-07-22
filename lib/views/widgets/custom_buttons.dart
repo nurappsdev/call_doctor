@@ -1,8 +1,8 @@
 import 'package:doctor/doctor.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_rx/src/rx_types/rx_types.dart';
+// import 'package:get/get.dart';
+// import 'package:get/get_rx/src/rx_types/rx_types.dart';
 
 class CustomButtons {
   CustomButtons._();
@@ -157,64 +157,64 @@ class CustomButtons {
     );
   }
 
-  static Widget online({
-    required RxBool status,
-    required Function(bool status) onchange,
-  }) {
-    return Obx(() {
-      return widget(
-        onPressed: () {
-          final currentStatus = !status.value;
-          status.value = currentStatus;
-          onchange(currentStatus);
-        },
-        child: Container(
-          width: 113.w,
-          height: 31.h,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(200), color: AppColors.red),
-          child: Stack(
-            children: [
-              AnimatedOpacity(
-                opacity: status.isTrue ? 1.0 : 0.0,
-                duration: const Duration(milliseconds: 280),
-                child: Row(
-                  children: [
-                    SizedBox(width: 6.w),
-                    const Spacer(),
-                  ],
-                ),
-              ),
-              AnimatedOpacity(
-                opacity: status.isFalse ? 1.0 : 0.0,
-                duration: const Duration(milliseconds: 280),
-                child: Row(
-                  children: [
-                    const Spacer(),
-                    SizedBox(width: 6.w),
-                  ],
-                ),
-              ),
-              AnimatedContainer(
-                width: 113.w,
-                height: 31.h,
-                alignment: status.isTrue
-                    ? Alignment.centerRight
-                    : Alignment.centerLeft,
-                duration: const Duration(milliseconds: 280),
-                child: Container(
-                  width: 59.h,
-                  height: 31.h,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: AppColors.red,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
-    });
-  }
+  // static Widget online({
+  //   required RxBool status,
+  //   required Function(bool status) onchange,
+  // }) {
+  //   return Obx(() {
+  //     return widget(
+  //       onPressed: () {
+  //         final currentStatus = !status.value;
+  //         status.value = currentStatus;
+  //         onchange(currentStatus);
+  //       },
+  //       child: Container(
+  //         width: 113.w,
+  //         height: 31.h,
+  //         decoration: BoxDecoration(
+  //             borderRadius: BorderRadius.circular(200), color: AppColors.red),
+  //         child: Stack(
+  //           children: [
+  //             AnimatedOpacity(
+  //               opacity: status.isTrue ? 1.0 : 0.0,
+  //               duration: const Duration(milliseconds: 280),
+  //               child: Row(
+  //                 children: [
+  //                   SizedBox(width: 6.w),
+  //                   const Spacer(),
+  //                 ],
+  //               ),
+  //             ),
+  //             AnimatedOpacity(
+  //               opacity: status.isFalse ? 1.0 : 0.0,
+  //               duration: const Duration(milliseconds: 280),
+  //               child: Row(
+  //                 children: [
+  //                   const Spacer(),
+  //                   SizedBox(width: 6.w),
+  //                 ],
+  //               ),
+  //             ),
+  //             AnimatedContainer(
+  //               width: 113.w,
+  //               height: 31.h,
+  //               alignment: status.isTrue
+  //                   ? Alignment.centerRight
+  //                   : Alignment.centerLeft,
+  //               duration: const Duration(milliseconds: 280),
+  //               child: Container(
+  //                 width: 59.h,
+  //                 height: 31.h,
+  //                 decoration: BoxDecoration(
+  //                   shape: BoxShape.circle,
+  //                   color: AppColors.red,
+  //                 ),
+  //               ),
+  //             ),
+  //           ],
+  //         ),
+  //       ),
+  //     );
+  //   });
+  // }
 }

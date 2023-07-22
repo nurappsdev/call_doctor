@@ -6,13 +6,13 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:doctor/doctor.dart';
 // import 'package:star_wish_bd/controllers/home_screen_controller.dart';
 // import 'package:star_wish_bd/controllers/get_controllers.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 // import 'package:star_wish_bd/views/widgets/custom_images.dart';
 // import 'package:star_wish_bd/views/widgets/celebrity_widget.dart';
 // import 'package:star_wish_bd/views/widgets/horizontal_list_view_widget.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const routeName = "";
+  static const String routeName = "/homepage";
   HomeScreen({Key? key}) : super(key: key);
 
   // final HomeScreenController controller =
@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                     hint: 'Search your Celebrities', icon: AppIcons.search),
               ),
               SizedBox(height: 24.h),
-              chooseCategoriesWidget(),
+              chooseCategoriesWidget(context),
               SizedBox(height: 24.h),
               categoryWidget(title: 'Musician'),
               SizedBox(height: 24.h),
@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget chooseCategoriesWidget() {
+  Widget chooseCategoriesWidget(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 16.w),
       decoration: BoxDecoration(
@@ -78,6 +78,8 @@ class HomeScreen extends StatelessWidget {
               ),
               CustomButtons.widget(
                 onPressed: () {
+                  Navigator.pushNamed(context, "/category");
+                  // Navigator.pushNamed(context, "/homepage");
                   //   Get.to(() => CategoriesScreen());
                 },
                 child: Container(

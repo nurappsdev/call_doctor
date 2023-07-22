@@ -1,6 +1,6 @@
 import 'package:doctor/views/widgets/custom_buttons.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+// import 'package:get/get.dart';
+// import 'package:get/get_core/src/get_main.dart';
 
 import 'package:doctor/doctor.dart';
 
@@ -33,7 +33,7 @@ class TitleBarWidget extends StatelessWidget {
                   icon: AppIcons.back,
                   padding: EdgeInsets.symmetric(vertical: 16.h),
                   onPressed: () {
-                    Get.back();
+                    Navigator.pop(context);
                   }),
               SizedBox(width: 16.w),
               Expanded(
