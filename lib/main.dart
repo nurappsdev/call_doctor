@@ -1,6 +1,7 @@
 import 'package:doctor/doctor.dart';
 import 'package:doctor/views/screens/book_appointment.dart';
-import 'package:doctor/views/screens/booking_list/booking_list_screen.dart';
+import 'package:doctor/views/screens/booking/booking_screen.dart';
+
 import 'package:doctor/views/screens/category/category_screen.dart';
 import 'package:doctor/views/screens/home/home_screen.dart';
 import 'package:doctor/views/screens/pending/pendign_screen.dart';
@@ -35,7 +36,7 @@ class Doctor extends StatelessWidget {
           // },
         );
       },
-      child: BookAppointmentScreen(),
+      child: BookingScreen(),
     );
   }
 }

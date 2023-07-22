@@ -1,4 +1,5 @@
-import 'package:star_wish_bd/star_wish_bd.dart';
+import 'package:doctor/doctor.dart';
+import 'package:doctor/views/widgets/custom_images.dart';
 
 class BookingItemWidget extends StatelessWidget {
   final String buttonName;

@@ -1,7 +1,5 @@
-import 'package:doctor/views/screens/booking_list/booking_list_screen.dart';
-import 'package:doctor/views/screens/booking_list/component/canceled_screen.dart';
-import 'package:doctor/views/screens/booking_list/component/completed_screen.dart';
-import 'package:doctor/views/screens/booking_list/component/pending_screen.dart';
+import 'package:doctor/views/screens/booking/booking_screen.dart';
+
 import 'package:doctor/views/widgets/custom_buttons.dart';
 import 'package:get/get.dart';
 
@@ -73,7 +71,7 @@ class PendignScreen extends StatelessWidget {
                 name: 'Submit',
                 onPressed: () {
                   Get.to(
-                    () => BookingListScreen(),
+                    () => BookingScreen(),
                   );
                 },
               ),

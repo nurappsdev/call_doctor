@@ -1,8 +1,7 @@
-import 'package:star_wish_bd/star_wish_bd.dart';
-import 'package:star_wish_bd/controllers/booking_screen_controller.dart';
-import 'package:star_wish_bd/controllers/get_controllers.dart';
+import 'package:doctor/doctor.dart';
+import 'package:doctor/views/widgets/custom_images.dart';
+
 import 'package:get/get.dart';
-import 'package:star_wish_bd/views/widgets/title_bar_widget.dart';
 
 import 'components/canceled_screen.dart';
 import 'components/completed_screen.dart';
@@ -12,8 +11,8 @@ import 'components/pending_screen.dart';
 class BookingScreen extends StatelessWidget {
   BookingScreen({Key? key}) : super(key: key);
 
-  final BookingScreenController controller =
-      GetControllers.instance.getBookingScreenController();
+  // final BookingScreenController controller =
+  //     GetControllers.instance.getBookingScreenController();
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +71,6 @@ class BookingScreen extends StatelessWidget {
                             PendingScreen(),
                             CompletedScreen(),
                             CanceledScreen(),
-
                           ],
                         ),
                       ),
@@ -80,7 +78,6 @@ class BookingScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
             ],
           ),
         ),

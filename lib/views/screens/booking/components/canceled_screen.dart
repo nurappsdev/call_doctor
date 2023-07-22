@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:star_wish_bd/star_wish_bd.dart';
+import 'package:doctor/doctor.dart';
 
 import 'booking_item_widget.dart';
 
