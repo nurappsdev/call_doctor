@@ -1,17 +1,15 @@
+import 'package:doctor/views/widgets/celebrity_widget.dart';
+import 'package:doctor/views/widgets/custom_buttons.dart';
+import 'package:doctor/views/widgets/title_bar_widget.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:star_wish_bd/star_wish_bd.dart';
-import 'package:star_wish_bd/controllers/recent_viewed_screen_controller.dart';
-import 'package:star_wish_bd/controllers/get_controllers.dart';
+import 'package:doctor/doctor.dart';
 import 'package:get/get.dart';
-import 'package:star_wish_bd/views/widgets/celebrity_widget.dart';
-import 'package:star_wish_bd/views/widgets/custom_buttons.dart';
-import 'package:star_wish_bd/views/widgets/title_bar_widget.dart';
 
 class RecentViewedScreen extends StatelessWidget {
   RecentViewedScreen({Key? key}) : super(key: key);
 
-  final RecentViewedScreenController controller =
-      GetControllers.instance.getRecentViewedScreenController();
+  // final RecentViewedScreenController controller =
+  //     GetControllers.instance.getRecentViewedScreenController();
 
   @override
   Widget build(BuildContext context) {

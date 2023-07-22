@@ -22,21 +22,21 @@ class Doctor extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       builder: (context, widget) {
-        return GetMaterialApp(
+        return MaterialApp(
           title: 'Doctor',
           debugShowCheckedModeBanner: false,
           navigatorKey: AppKeys.navigation,
           theme: ThemeData(),
           home: widget,
-          // initialRoute: SingInScreen.routeName,
-          // routes: {
-          //   SingInScreen.routeName: (context) => SingInScreen(),
-          //   "/homepage": (context) => HomeScreen(),
-          //   "/regScreen": (context) => RegistrationScreen(),
-          // },
+          initialRoute: SingInScreen.routeName,
+          routes: {
+            SingInScreen.routeName: (context) => SingInScreen(),
+            "/homepage": (context) => HomeScreen(),
+            "/regScreen": (context) => RegistrationScreen(),
+          },
         );
       },
-      child: BookingScreen(),
+      // child: BookingScreen(),
     );
   }
 }

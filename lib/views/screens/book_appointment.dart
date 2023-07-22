@@ -88,7 +88,7 @@ class BookAppointmentScreen extends StatelessWidget {
         children: [
           Expanded(
             child: Text(
-              "Shakib Al Hasan",
+              "Dr. Shakib Al Hasan",
               style: AppTextStyles.medium20.copyWith(color: AppColors.black1),
             ),
           ),
@@ -100,7 +100,7 @@ class BookAppointmentScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(100.r),
             ),
             child: Text(
-              "Cricketer",
+              "Doctor",
               style: AppTextStyles.semiBold14.copyWith(color: AppColors.red),
             ),
           ),
